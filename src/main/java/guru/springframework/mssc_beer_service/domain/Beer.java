@@ -1,4 +1,4 @@
-package guru.springframework.mssc_beer_service.web.domain;
+package guru.springframework.mssc_beer_service.domain;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
