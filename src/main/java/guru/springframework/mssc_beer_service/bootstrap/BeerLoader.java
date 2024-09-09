@@ -34,27 +34,27 @@ public class BeerLoader implements CommandLineRunner{
                 .beerStyle(BeerStyleEnum.IPA.name())
                 .price(new BigDecimal("12.95"))
                 .upc(BEER_1_UPC)
+                .minOnHand(12)
+                .quantityToBrew(200)
                 .build();
-                //.minOnHand(12)
-                //.quantityToBrew(200)
 
         Beer b2 = Beer.builder()
                 .beerName("Galaxy Cat")
                 .beerStyle(BeerStyleEnum.PALE_ALE.name())
                 .price(new BigDecimal("12.95"))
                 .upc(BEER_2_UPC)
+                .minOnHand(12)
+                .quantityToBrew(200)
                 .build();
-                //.minOnHand(12)
-                //.quantityToBrew(200)
 
         Beer b3 = Beer.builder()
                 .beerName("Pinball Porter")
                 .beerStyle(BeerStyleEnum.PALE_ALE.name())
                 .price(new BigDecimal("12.95"))
                 .upc(BEER_3_UPC)
+                .quantityToBrew(200)
+                .minOnHand(12)
                 .build();
-                // .quantityToBrew(200)
-                // .minOnHand(12)
 
         beerRepository.save(b1);
         beerRepository.save(b2);
