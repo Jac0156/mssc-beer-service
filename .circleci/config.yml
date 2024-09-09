@@ -20,7 +20,9 @@ jobs:
       # Checkout the code as the first step.
       - checkout
 
+
       - run: java --version
+
       # Use mvn clean and package as the standard maven build phase
       - run:
           name: Build
