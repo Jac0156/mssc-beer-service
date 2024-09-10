@@ -1,6 +1,10 @@
 package guru.springframework.mssc_beer_service.web.controller;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.*;
+//import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders.*;
+import static org.springframework.restdocs.payload.PayloadDocumentation.*;
+import static org.springframework.restdocs.request.RequestDocumentation.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 import java.math.BigDecimal;
@@ -34,8 +38,24 @@ class BeerControllerTest {
     @Test
     void getBeerById() throws Exception {
 
-        mockMvc.perform(get("/api/v1/beer/" + UUID.randomUUID().toString()).accept(MediaType.APPLICATION_JSON))
-                .andExpect(status().isOk());
+        mockMvc.perform(get("/api/v1/beer/{beerId}", UUID.randomUUID().toString()).accept(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andDo(document("v1/beer", 
+                    pathParameters(
+                        parameterWithName("beerId").description("UUID of desired beer to get.")
+                    ),
+                    responseFields(
+                        fieldWithPath("id").description("Id of Beer"),
+                        fieldWithPath("version").description("Version number"),
+                        fieldWithPath("createdDate").description("Date Created"),
+                        fieldWithPath("lastModifiedDate").description("Date Updated"),
+                        fieldWithPath("beerName").description("Beer Name"),
+                        fieldWithPath("beerStyle").description("Beer Style"),
+                        fieldWithPath("upc").description("UPC of Beer"),
+                        fieldWithPath("price").description("Price"),
+                        fieldWithPath("quantityOnHand").description("Quantity On hand")
+                    )
+                ));
 
     }
 
@@ -48,7 +68,19 @@ class BeerControllerTest {
         mockMvc.perform(post("/api/v1/beer")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(beerDtoJson))
-                .andExpect(status().isCreated());
+                .andExpect(status().isCreated())
+                .andDo(document("v1/beer", 
+                    requestFields(
+                        fieldWithPath("id").ignored(),
+                        fieldWithPath("version").ignored(),
+                        fieldWithPath("createdDate").ignored(),
+                        fieldWithPath("lastModifiedDate").ignored(),
+                        fieldWithPath("beerName").description("Beer Name"),
+                        fieldWithPath("beerStyle").description("Beer Style"),
+                        fieldWithPath("upc").description("UPC of Beer"),
+                        fieldWithPath("price").description("Price"),
+                        fieldWithPath("quantityOnHand").ignored()
+                    )));
     }
 
     @Test
