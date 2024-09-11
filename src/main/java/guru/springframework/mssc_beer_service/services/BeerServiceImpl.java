@@ -12,7 +12,7 @@ import guru.springframework.mssc_beer_service.web.model.BeerDto;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
-@Service("beerService")
+@Service
 public class BeerServiceImpl implements BeerService {
 
     private final BeerRepository beerRepository;
