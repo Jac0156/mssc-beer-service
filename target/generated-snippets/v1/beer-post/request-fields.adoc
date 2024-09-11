@@ -17,7 +17,7 @@
 |Must be positive. Must not be null
 
 |price
-|Number
+|String
 |Price
 |Must be positive. Must not be null
 

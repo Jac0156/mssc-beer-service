@@ -461,7 +461,7 @@ documentation snippets.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ curl 'http://localhost:8080/api/v1/beer/9bc00a0c-9959-475f-bec5-1b1c1a8b2319' -i -X GET \
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ curl 'http://localhost:8080/api/v1/beer/484ba0c6-23ca-42cd-b18b-a6ffee2cd268' -i -X GET \
     -H 'Accept: application/json'</code></pre>
 </div>
 </div>
@@ -470,7 +470,7 @@ documentation snippets.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">GET /api/v1/beer/9bc00a0c-9959-475f-bec5-1b1c1a8b2319 HTTP/1.1
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">GET /api/v1/beer/484ba0c6-23ca-42cd-b18b-a6ffee2cd268 HTTP/1.1
 Accept: application/json
 Host: localhost:8080</code></pre>
 </div>
@@ -569,7 +569,7 @@ Content-Length: 148
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ curl 'http://localhost:8080/api/v1/beer' -i -X POST \
     -H 'Content-Type: application/json;charset=UTF-8' \
-    -d '{"id":null,"version":null,"createdDate":null,"lastModifiedDate":null,"beerName":"Beer1","beerStyle":"IPA","upc":1234567,"price":11.949999999999999289457264239899814128875732421875,"quantityOnHand":null}'</code></pre>
+    -d '{"id":null,"version":null,"createdDate":null,"lastModifiedDate":null,"beerName":"Beer1","beerStyle":"IPA","upc":1234567,"price":"11.949999999999999289457264239899814128875732421875","quantityOnHand":null}'</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -579,10 +579,10 @@ Content-Length: 148
 <div class="content">
 <pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">POST /api/v1/beer HTTP/1.1
 Content-Type: application/json;charset=UTF-8
-Content-Length: 202
+Content-Length: 204
 Host: localhost:8080
 
-{"id":null,"version":null,"createdDate":null,"lastModifiedDate":null,"beerName":"Beer1","beerStyle":"IPA","upc":1234567,"price":11.949999999999999289457264239899814128875732421875,"quantityOnHand":null}</code></pre>
+{"id":null,"version":null,"createdDate":null,"lastModifiedDate":null,"beerName":"Beer1","beerStyle":"IPA","upc":1234567,"price":"11.949999999999999289457264239899814128875732421875","quantityOnHand":null}</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -640,7 +640,7 @@ Host: localhost:8080
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">price</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Number</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Price</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Must be positive. Must not be null</p></td>
 </tr>
