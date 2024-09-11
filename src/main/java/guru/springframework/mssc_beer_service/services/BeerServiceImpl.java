@@ -9,11 +9,10 @@ import guru.springframework.mssc_beer_service.repositories.BeerRepository;
 import guru.springframework.mssc_beer_service.web.controller.NotFoundException;
 import guru.springframework.mssc_beer_service.web.mappers.BeerMapper;
 import guru.springframework.mssc_beer_service.web.model.BeerDto;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
-@Service
+@Service("beerService")
 public class BeerServiceImpl implements BeerService {
 
     private final BeerRepository beerRepository;
@@ -27,12 +26,12 @@ public class BeerServiceImpl implements BeerService {
     }
 
     @Override
-    public BeerDto saveNewBeer(@Valid BeerDto beerDto) {
+    public BeerDto saveNewBeer(BeerDto beerDto) {
         return beerMapper.beerToBeerDto(beerRepository.save(beerMapper.beerDtoToBeer(beerDto)));
     }
 
     @Override
-    public BeerDto updateBeer(UUID beerId, @Valid BeerDto beerDto) {
+    public BeerDto updateBeer(UUID beerId, BeerDto beerDto) {
         Beer beer = beerRepository.findById(beerId).orElseThrow(NotFoundException::new);
 
         beer.setBeerName(beerDto.getBeerName());

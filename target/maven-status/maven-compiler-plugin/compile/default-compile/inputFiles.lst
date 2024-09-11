@@ -2,8 +2,11 @@ c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\sp
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\domain\Beer.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\MsscBeerServiceApplication.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\repositories\BeerRepository.java
+c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\services\BeerService.java
+c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\services\BeerServiceImpl.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\web\controller\BeerController.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\web\controller\MvcExceptionHandler.java
+c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\web\controller\NotFoundException.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\web\mappers\BeerMapper.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\web\mappers\DateMapper.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\web\model\BeerDto.java
