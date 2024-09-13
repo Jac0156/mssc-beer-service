@@ -4,6 +4,9 @@ c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\sp
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\repositories\BeerRepository.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\services\BeerService.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\services\BeerServiceImpl.java
+c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\services\inventory\BeerInventoryService.java
+c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\services\inventory\BeerInventoryServiceRestTemplateImpl.java
+c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\services\inventory\model\BeerInventoryDto.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\web\controller\BeerController.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\web\controller\MvcExceptionHandler.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\web\controller\NotFoundException.java
