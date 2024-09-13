@@ -12,6 +12,8 @@ import com.fasterxml.jackson.databind.JsonNode;
 
 public class BeerPagedList extends PageImpl<BeerDto> {
 
+    static final long serialVersionUID = 125452353259973L;
+
     // example of JsonCreator 
     @JsonCreator(mode = JsonCreator.Mode.PROPERTIES)
     public BeerPagedList(

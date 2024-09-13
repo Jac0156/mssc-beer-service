@@ -4,9 +4,12 @@ guru\springframework\mssc_beer_service\services\BeerServiceImpl.class
 guru\springframework\mssc_beer_service\web\mappers\DateMapper.class
 guru\springframework\mssc_beer_service\services\inventory\BeerInventoryServiceRestTemplateImpl$1.class
 guru\springframework\mssc_beer_service\services\BeerService.class
+guru\springframework\mssc_beer_service\config\CacheConfig.class
 guru\springframework\mssc_beer_service\services\inventory\model\BeerInventoryDto$BeerInventoryDtoBuilder.class
 guru\springframework\mssc_beer_service\web\model\BeerPagedList.class
+guru\springframework\mssc_beer_service\web\mappers\BeerMapperImpl_.class
 guru\springframework\mssc_beer_service\web\controller\MvcExceptionHandler.class
+guru\springframework\mssc_beer_service\services\inventory\BeerInventoryServiceRestTemplateImpl.class
 guru\springframework\mssc_beer_service\domain\Beer$BeerBuilder.class
 guru\springframework\mssc_beer_service\web\mappers\BeerMapper.class
 guru\springframework\mssc_beer_service\services\inventory\model\BeerInventoryDto.class
@@ -14,6 +17,7 @@ guru\springframework\mssc_beer_service\domain\Beer.class
 guru\springframework\mssc_beer_service\repositories\BeerRepository.class
 guru\springframework\mssc_beer_service\web\controller\BeerController.class
 guru\springframework\mssc_beer_service\web\controller\NotFoundException.class
+guru\springframework\mssc_beer_service\web\mappers\BeerMapperDecorator.class
 guru\springframework\mssc_beer_service\web\model\BeerStyleEnum.class
 guru\springframework\mssc_beer_service\bootstrap\BeerLoader.class
 guru\springframework\mssc_beer_service\web\model\BeerDto$BeerDtoBuilder.class
