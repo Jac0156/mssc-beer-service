@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-09-13T10:38:13-0400",
+    date = "2024-09-13T13:23:44-0400",
     comments = "version: 1.6.0, compiler: Eclipse JDT (IDE) 3.39.0.v20240820-0604, environment: Java 17.0.12 (Eclipse Adoptium)"
 )
 @Component
@@ -22,6 +22,30 @@ public class BeerMapperImpl_ implements BeerMapper {
 
     @Override
     public BeerDto beerToBeerDto(Beer beer) {
+        if ( beer == null ) {
+            return null;
+        }
+
+        BeerDto.BeerDtoBuilder beerDto = BeerDto.builder();
+
+        beerDto.beerName( beer.getBeerName() );
+        if ( beer.getBeerStyle() != null ) {
+            beerDto.beerStyle( Enum.valueOf( BeerStyleEnum.class, beer.getBeerStyle() ) );
+        }
+        beerDto.createdDate( dateMapper.asOffsetDateTime( beer.getCreatedDate() ) );
+        beerDto.id( beer.getId() );
+        beerDto.lastModifiedDate( dateMapper.asOffsetDateTime( beer.getLastModifiedDate() ) );
+        beerDto.price( beer.getPrice() );
+        beerDto.upc( beer.getUpc() );
+        if ( beer.getVersion() != null ) {
+            beerDto.version( beer.getVersion().intValue() );
+        }
+
+        return beerDto.build();
+    }
+
+    @Override
+    public BeerDto beerToBeerDtoWithInventory(Beer beer) {
         if ( beer == null ) {
             return null;
         }
