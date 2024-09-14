@@ -74,6 +74,32 @@ class BeerControllerTest {
     }
 
     @Test
+    void getBeerByUpc() throws Exception {
+
+        BeerDto beerDto = getValidBeerDto();
+        given(beerService.getByUpc(any(), anyBoolean())).willReturn(getValidBeerDto());
+
+        mockMvc.perform(get("/api/v1/beerUpc/{upc}", beerDto.getUpc()).accept(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andDo(document("v1/beerUpc-get", 
+                    pathParameters(
+                        parameterWithName("upc").description("UPC of desired beer to get.")
+                    ),
+                    responseFields(
+                        fieldWithPath("id").description("Id of Beer"),
+                        fieldWithPath("version").description("Version number"),
+                        fieldWithPath("createdDate").description("Date Created"),
+                        fieldWithPath("lastModifiedDate").description("Date Updated"),
+                        fieldWithPath("beerName").description("Beer Name"),
+                        fieldWithPath("beerStyle").description("Beer Style"),
+                        fieldWithPath("upc").description("UPC of Beer"),
+                        fieldWithPath("price").description("Price"),
+                        fieldWithPath("quantityOnHand").description("Quantity On hand")
+                    )
+                )); 
+
+    } 
+    @Test
     void saveNewBeer() throws Exception {
        
         BeerDto beerDto = getValidBeerDto();

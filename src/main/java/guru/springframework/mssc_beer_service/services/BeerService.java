@@ -12,7 +12,9 @@ public interface BeerService {
 
     BeerPagedList listBeers(String beerName, BeerStyleEnum beerStyle, PageRequest pageRequest, Boolean showInventoryOnHand);
 
-    BeerDto getById(UUID beerID, Boolean showInventoryOnHand);
+    BeerDto getById(UUID beerId, Boolean showInventoryOnHand);
+    
+    BeerDto getByUpc(String upc, Boolean showInventoryOnHand);
 
     BeerDto saveNewBeer(BeerDto beerDto);
 
