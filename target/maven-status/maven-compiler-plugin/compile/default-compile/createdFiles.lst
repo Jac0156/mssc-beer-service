@@ -12,6 +12,7 @@ guru\springframework\mssc_beer_service\web\controller\MvcExceptionHandler.class
 guru\springframework\mssc_beer_service\services\inventory\BeerInventoryServiceRestTemplateImpl.class
 guru\springframework\mssc_beer_service\domain\Beer$BeerBuilder.class
 guru\springframework\mssc_beer_service\web\mappers\BeerMapper.class
+guru\springframework\mssc_beer_service\config\JacksonConfig.class
 guru\springframework\mssc_beer_service\services\inventory\model\BeerInventoryDto.class
 guru\springframework\mssc_beer_service\domain\Beer.class
 guru\springframework\mssc_beer_service\repositories\BeerRepository.class

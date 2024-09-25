@@ -20,4 +20,4 @@ public interface BeerService {
 
     BeerDto updateBeer(UUID beerId, BeerDto beerDto);
 
-}
+} 
