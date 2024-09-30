@@ -9,7 +9,7 @@ import guru.springframework.mssc_beer_service.web.model.BeerDto;
 
 @Mapper(uses = { DateMapper.class })
 @DecoratedWith(BeerMapperDecorator.class)
-public interface BeerMapper {
+public interface BeerMapper { 
  
     @Mapping( target = "quantityOnHand", ignore = true )
     BeerDto beerToBeerDto(Beer beer);
