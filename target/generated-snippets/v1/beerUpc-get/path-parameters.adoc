@@ -1,8 +1,0 @@
-.+/api/v1/beerUpc/{upc}+
-|===
-|Parameter|Description
-
-|`+upc+`
-|UPC of desired beer to get.
-
-|===
