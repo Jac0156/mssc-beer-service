@@ -2,11 +2,17 @@ c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\sp
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\config\CacheConfig.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\config\JacksonConfig.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\config\JmsConfig.java
+c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\config\TaskConfig.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\domain\Beer.java
+c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\events\BeerEvent.java
+c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\events\BrewBeerEvent.java
+c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\events\NewInventoryEvent.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\MsscBeerServiceApplication.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\repositories\BeerRepository.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\services\BeerService.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\services\BeerServiceImpl.java
+c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\services\brewing\BrewBeerListener.java
+c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\services\brewing\BrewingService.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\services\inventory\BeerInventoryService.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\services\inventory\BeerInventoryServiceRestTemplateImpl.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\services\inventory\model\BeerInventoryDto.java

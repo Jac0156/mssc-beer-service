@@ -10,6 +10,7 @@ import guru.springframework.mssc_beer_service.events.BrewBeerEvent;
 import guru.springframework.mssc_beer_service.events.NewInventoryEvent;
 import guru.springframework.mssc_beer_service.repositories.BeerRepository;
 import guru.springframework.mssc_beer_service.web.model.BeerDto;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
@@ -21,6 +22,7 @@ public class BrewBeerListener {
     private final BeerRepository beerRepository;
     private final JmsTemplate jmsTemplate;
 
+    @Transactional
     @JmsListener(destination = JmsConfig.BREWING_REQUEST_QUEUE)
     public void listen(BrewBeerEvent event) {
 
