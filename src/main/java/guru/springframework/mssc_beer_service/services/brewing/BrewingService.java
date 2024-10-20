@@ -6,9 +6,9 @@ import org.springframework.jms.core.JmsTemplate;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
+import guru.sfg.common.events.BrewBeerEvent;
 import guru.springframework.mssc_beer_service.config.JmsConfig;
 import guru.springframework.mssc_beer_service.domain.Beer;
-import guru.springframework.mssc_beer_service.events.BrewBeerEvent;
 import guru.springframework.mssc_beer_service.repositories.BeerRepository;
 import guru.springframework.mssc_beer_service.services.inventory.BeerInventoryService;
 import guru.springframework.mssc_beer_service.web.mappers.BeerMapper;

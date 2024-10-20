@@ -4,10 +4,10 @@ import org.springframework.jms.annotation.JmsListener;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Service;
 
+import guru.sfg.common.events.BrewBeerEvent;
+import guru.sfg.common.events.NewInventoryEvent;
 import guru.springframework.mssc_beer_service.config.JmsConfig;
 import guru.springframework.mssc_beer_service.domain.Beer;
-import guru.springframework.mssc_beer_service.events.BrewBeerEvent;
-import guru.springframework.mssc_beer_service.events.NewInventoryEvent;
 import guru.springframework.mssc_beer_service.repositories.BeerRepository;
 import guru.springframework.mssc_beer_service.web.model.BeerDto;
 import jakarta.transaction.Transactional;
