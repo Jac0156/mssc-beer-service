@@ -1,4 +1,4 @@
-package guru.springframework.mssc_beer_service.web.model;
+package guru.sfg.brewery.model;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

@@ -5,9 +5,9 @@ import java.math.BigDecimal;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import guru.sfg.brewery.model.BeerStyleEnum;
 import guru.springframework.mssc_beer_service.domain.Beer;
 import guru.springframework.mssc_beer_service.repositories.BeerRepository;
-import guru.springframework.mssc_beer_service.web.model.BeerStyleEnum;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor

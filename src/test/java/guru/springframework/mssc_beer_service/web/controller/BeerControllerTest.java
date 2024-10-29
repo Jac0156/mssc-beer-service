@@ -28,10 +28,10 @@ import org.springframework.util.StringUtils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import guru.sfg.brewery.model.BeerDto;
+import guru.sfg.brewery.model.BeerStyleEnum;
 import guru.springframework.mssc_beer_service.bootstrap.BeerLoader;
 import guru.springframework.mssc_beer_service.services.BeerService;
-import guru.springframework.mssc_beer_service.web.model.BeerDto;
-import guru.springframework.mssc_beer_service.web.model.BeerStyleEnum;
 
 @ExtendWith(RestDocumentationExtension.class)
 @AutoConfigureRestDocs

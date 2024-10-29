@@ -8,13 +8,13 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
+import guru.sfg.brewery.model.BeerDto;
+import guru.sfg.brewery.model.BeerPagedList;
+import guru.sfg.brewery.model.BeerStyleEnum;
 import guru.springframework.mssc_beer_service.domain.Beer;
 import guru.springframework.mssc_beer_service.repositories.BeerRepository;
 import guru.springframework.mssc_beer_service.web.controller.NotFoundException;
 import guru.springframework.mssc_beer_service.web.mappers.BeerMapper;
-import guru.springframework.mssc_beer_service.web.model.BeerDto;
-import guru.springframework.mssc_beer_service.web.model.BeerPagedList;
-import guru.springframework.mssc_beer_service.web.model.BeerStyleEnum;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
