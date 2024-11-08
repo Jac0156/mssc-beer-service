@@ -1,9 +1,13 @@
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\sfg\brewery\model\BeerDto.java
+c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\sfg\brewery\model\BeerOrderDto.java
+c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\sfg\brewery\model\BeerOrderLineDto.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\sfg\brewery\model\BeerPagedList.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\sfg\brewery\model\BeerStyleEnum.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\sfg\brewery\model\events\BeerEvent.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\sfg\brewery\model\events\BrewBeerEvent.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\sfg\brewery\model\events\NewInventoryEvent.java
+c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\sfg\brewery\model\events\ValidateOrderRequest.java
+c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\sfg\brewery\model\events\ValidateOrderResult.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\bootstrap\BeerLoader.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\config\CacheConfig.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\config\JacksonConfig.java
@@ -19,6 +23,8 @@ c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\sp
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\services\inventory\BeerInventoryService.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\services\inventory\BeerInventoryServiceRestTemplateImpl.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\services\inventory\model\BeerInventoryDto.java
+c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\services\order\BeerOrderValidationListener.java
+c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\services\order\BeerOrderValidator.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\web\controller\BeerController.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\web\controller\MvcExceptionHandler.java
 c:\Users\Jac01\OneDrive\Documents\GitHub\mssc-beer-service\src\main\java\guru\springframework\mssc_beer_service\web\controller\NotFoundException.java
